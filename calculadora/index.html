@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/e3bbb30d15.js" crossorigin="anonymous"></script>
+	<script src="funciones.js" async="true"></script>
+</head>
+<body>
+
+	<!-- 
+	<i class="fas fa-sun"></i>
+	<i class="fas fa-moon"></i>
+	 -->
+
+	 <div id="canvas" class="canvasOscuro">
+	 	<div id="modo">
+	 		<i class="fas fa-sun fa-lg inactivo" onclick="claro()"></i>
+			<i class="fas fa-moon fa-lg" onclick="oscuro()"></i>
+	 	</div>
+
+	 	<div id="inputs">
+	 		<p id="operacion"></p>
+	 		<p id="resultado"></p>
+	 	</div>
+
+	 	<div id="botones" class="botonesOscuro">
+	 		<button class="interactive borrar" onclick="borrar()">C</button>
+	 		<button></button>
+	 		<button></button>
+	 		<button class="interactive operadores" onclick = "agregar('/')">/</button>
+	 		<button class="interactive" onclick = "agregar(7)">7</button>
+	 		<button class="interactive" onclick = "agregar(8)">8</button>
+	 		<button class="interactive" onclick = "agregar(9)">9</button>
+	 		<button class="interactive operadores" onclick = "agregar('*')">x</button>
+	 		<button class="interactive" onclick = "agregar(4)">4</button>
+	 		<button class="interactive" onclick = "agregar(5)">5</button>
+	 		<button class="interactive" onclick = "agregar(6)">6</button>
+	 		<button class="interactive operadores" onclick = "agregar('-')">-</button>
+	 		<button class="interactive" onclick = "agregar(1)">1</button>
+	 		<button class="interactive" onclick = "agregar(2)">2</button>
+	 		<button class="interactive" onclick = "agregar(3)">3</button>
+	 		<button class="interactive operadores" onclick = "agregar('+')">+</button>
+	 		<button class="interactive" onclick = "agregar(0)">0</button>
+	 		<button></button>
+	 		<button class="interactive" onclick = "agregar('.')">.</button>
+	 		<button class="interactive" id="igual" onclick="mostrarResultado()">=</button>
+	 	</div>
+	 </div>
+
+</body>
+</html>

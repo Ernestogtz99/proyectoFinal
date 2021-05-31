@@ -1,0 +1,424 @@
+/* 	COLORES
+azul:#1da1f3
+gris claro:#EFF1F2
+gris normal:#EBEEF0
+gris fuerteclaro: #c5c6c7
+gris fuerte:#5b7083
+blanco:#FFFFFF
+*/
+
+*
+{
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Roboto', sans-serif;
+}
+body
+{
+	background-color: #EBEEF0;
+}
+ 
+/*---------------------TABS-----------------------*/
+#tabs
+{
+	background-color: #FFFFFF;
+	position: fixed;
+	width: 25%;
+	height: 100%;
+}
+	#contenidoTabs
+	{
+		position: absolute;
+		left: 15%;
+		width: 70%;
+		top: 15px;
+	}
+	#contenidoTabs > button
+	{
+		width: 100%;
+		height: 50px;
+		background-color: #1da1f3;
+		color: white; 
+		border-radius: 30px;
+		box-shadow: none;
+		border: none;
+		font-weight: 700;
+		font-size: 15px;
+	}
+	#contenidoTabs > button:hover
+	{
+		/*background-color: rgba(29, 161, 243, 0.7);*/
+		background-color: #1a86c9;
+		transition-duration: 0.3s;
+		cursor: pointer;
+	}
+	#birdIcon
+	{
+		 width:40px; 
+		 height:40px; 
+		 margin-left:30px;
+		 margin-bottom: 30px;
+	}
+
+		.tab
+		{
+			height: 40px;
+			position: relative;
+			margin-left: 30px;
+			margin-bottom: 20px;
+		}
+			.tab > h3
+			{
+				position: absolute;
+				margin-left: 50px;
+				line-height: 30px;
+				font-weight: 900;
+				font-size: 20px;
+			}
+			.tab > .textException
+			{
+				color: #1da1f3;
+			}
+			.tab > img
+			{
+				position: relative;
+				float:left;
+				width: 30px;
+				height: 30px;
+			}
+			.tab > .profilePic
+			{
+				position: relative;
+				float:left;
+				border-radius: 50px;
+				width: 30px;
+				height: 30px;
+				background-color: yellow;
+				overflow: hidden;
+			}
+			.tab > .profilePic > img
+			{
+				max-height: 40px;
+			}
+
+#misc
+{
+	position: absolute;
+	right: 0px;
+	width:30%;
+	height: 100%;
+	background-color: #FFFFFF;
+}
+	#contenidoMisc
+	{
+		position: absolute;
+		left: 8%;
+		width: 72%;
+		height: calc(100% - 15px);
+		top: 15px;
+	}
+		#contenidoMisc > input
+		{
+			width: 100%;
+			height: 40px;
+			background-color: #EBEEF0;
+			border:none;
+			border-radius: 50px;
+			padding-left: 40px;
+			box-sizing: border-box;
+			margin-bottom: 10px;
+		}
+		#searchIcon
+		{
+			position: absolute;
+			height: 15px; 
+			top: 12px;
+			left: 12px;
+		}
+
+	.section
+	{
+		/*background-color: #c5c6c7;*/
+		background-color: #EFF1F2;
+		position: relative;
+		width: 100%;
+		/*height: 400px;*/
+		border-radius: 20px;
+		overflow: hidden;
+		margin-bottom: 20px;
+	}	
+		.miniSection
+		{
+			/*background-color: #EFF1F2;*/
+			background-color: #F7F9FA;
+			padding: 12px 8px 8px 8px;
+			margin-bottom: 2px;
+		}
+			.miniSection > h3
+			{
+				font-weight: 900;
+			}
+			.miniSection > img
+			{
+				position: absolute;
+				width: 20px;
+				height: 20px;
+				right: 10px;
+				top: 12px;
+			}
+			.miniSection > h6, .miniSection > p
+			{
+				margin-bottom: 5px;
+				font-weight: 500;
+				font-size: 12px;
+				color: #5b7083;
+			}
+			.miniSection > p { font-weight: 400; }
+			.miniSection > h5
+			{
+				font-weight: 700;
+				font-size: 15px;
+				margin-bottom: 5px;
+			}
+			.miniSection > h4
+			{
+				color: #5b7083;
+				font-weight: 400;
+				font-size: 15px;
+				margin-bottom: 5px;
+			}
+			.info
+			{
+				/*border: 3px solid red;*/
+				border: 1px solid #c5c6c7;
+				border-radius: 15px;
+				width: 100%;
+				height: 77px;
+				overflow: hidden;
+				box-sizing: border-box;
+				position: relative;
+				margin-bottom: 6px;
+				margin-top:3px;
+			}
+				.info > h5,.info >h6
+				{
+					width: 60%;
+					height: 40px;
+					position: absolute;
+					margin-left: 10px;
+					font-weight: 400;
+					font-size: 13px;
+				}
+				.info > h5
+				{
+					margin-top: 8px;
+					font-size: 14px;
+					color: #5b7083;
+					font-weight: 400;
+				}
+				.info > h6
+				{
+					margin-top:30px;
+					margin-bottom: 8px;
+					font-weight: 500;
+
+				}
+				.infoPic
+				{
+					width:26%;
+					height: 80px;
+					position: absolute;
+					right: 0px;
+					background-size: cover;
+				}
+				.infoPic > img
+				{
+					max-height: 82px;
+				}
+
+			.showMore
+			{
+				height: 20px;
+			}
+			.showMore > h3
+			{
+				color: #1da1f3;
+				font-weight: 500;
+				font-size: 14px;
+			}
+
+#middle
+{
+	position: absolute;
+	top:0px;
+	width: 45%;
+	height: 100%;
+	left:25%;
+	padding: 0px 4px;
+	box-sizing: border-box;
+}
+	#tweet
+	{
+		background-color: #EBEEF0;
+		margin-bottom: 20px;
+	}
+		#home
+		{
+			margin-bottom: 2px;
+			height: 60px;
+			background-color: #FFFFFF;
+		}
+			#home > h3
+			{
+				line-height: 60px;
+				font-weight: 900;
+				font-size: 20px;
+				margin-left: 10px;
+			}
+			#home > img
+			{
+				position: absolute;
+				width: 25px;
+				right: 10px;
+				top: 18px;
+			}
+		#postTweet
+		{
+			height: 95px;
+			width: 100%;
+			position: relative;
+			background-color: #FFFFFF;
+			padding:10px;
+			box-sizing: border-box;
+		}
+			.pp
+			{
+				/*background-color: yellow;*/
+				position: relative;
+				float:left;
+				height: 100%;
+				width:50px;
+			}
+				.pp > .profilePic
+				{
+					border-radius: 50px;
+					width: 50px;
+					height: 50px;
+					background-color: yellow;
+					overflow: hidden;
+				}	
+				.profilePic > img
+				{
+					max-width: 50px;
+				}
+			#writeTweet
+			{
+				margin-top: 15px;
+				position:relative;
+				float: right;
+				width:calc(100% - 50px);
+				height: 60px;
+				padding-left: 10px;
+				box-sizing: border-box;
+				background-color: green;
+			}
+				#writeTweet > textarea
+				{
+					box-sizing: border-box;
+					width:100%;
+					border:none;
+					overflow: hidden;
+					box-shadow: none;
+					outline: none;
+				}
+				#writeTweet > button
+				{
+					position: absolute;
+					width: 80px;
+					height: 40px;
+					background-color: #1da1f3;
+					color: white; 
+					border-radius: 30px;
+					box-shadow: none;
+					border: none;
+					font-weight: 700;
+					font-size: 15px;
+					bottom:0px;
+					right: 0px;
+				}
+				#postTweetIcons
+				{
+					position: absolute;
+					bottom:8px;
+				}
+					#postTweetIcons > img
+					{
+						width: 18px;
+						margin-right: 8px;
+					}
+
+	#feed
+	{
+		background-color: #EBEEF0;
+		position: absolute;
+	}
+		.tweet
+		{
+			background-color: #FFFFFF;
+			width: 100%;
+			position: relative;
+			box-sizing: border-box;
+			border: 2px solid yellow;
+		}
+			.tweetInfo
+			{
+				background-color: red;
+				float:right;
+				width: 90%;
+			}
+				.tweetInfo > h1,h2
+				{
+					position: relative;
+					float: left;
+					width:180px;
+					font-size: 14px;
+				}
+				.tweetInfo > h3
+				{
+					position: relative;
+					float: left;
+				}
+				.tweetInfo > h3 > b { color:#1da1f3; }
+				.tweetInfo > img
+				{
+					position: absolute;
+					right: 0px;
+					width: 20px;
+				}
+					.tweetIcons
+					{
+						position: absolute;
+						bottom: 0px;
+					}
+						.icon
+						{
+							margin-right: 120px;
+							float: left;
+						}
+						.icon > img
+						{
+							position:relative;
+							float:left;
+							width: 20px;
+
+						}
+						.icon > p
+						{
+							position: relative;
+							float: left;
+							font-size: 12px;
+							line-height: 20px;
+							color: #5B7083;
+							margin-left: 5px;
+						}
+
